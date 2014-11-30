@@ -3,7 +3,9 @@ var sass = require('gulp-sass');
 
 gulp.task('styles', function () {
   return gulp.src('./sass/*.scss')
-    .pipe(sass())
+    .pipe(sass({
+      errLogToConsole:true
+    }))
     .pipe(gulp.dest('./public/css'));
 });
 
@@ -37,4 +39,4 @@ gulp.task('livereload', function () {
   tinylr.listen(35729);
 });
 
-gulp.task('default', ['watch_styles', 'express', 'livereload']);
+gulp.task('default', ['styles', 'watch_styles', 'express', 'livereload']);

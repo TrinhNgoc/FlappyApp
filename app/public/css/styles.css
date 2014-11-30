@@ -5557,7 +5557,7 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 body {
-  background-color: #FFF; }
+  background-color: #2B2D33; }
 
 #header-block header {
   background-color: #2B2D33;
@@ -5565,7 +5565,7 @@ body {
   background-repeat: repeat-x;
   display: inline-block;
   width: 100%;
-  height: 150px; }
+  height: 100px; }
   #header-block header a {
     color: #00CCCC;
     font-family: 'Lato', sans-serif;
@@ -5600,9 +5600,12 @@ body {
     display: inline; }
 
 #content-block {
+  background-color: #FFFFFF;
   position: relative;
   top: 50px;
-  text-align: left; }
+  text-align: left;
+  padding-top: 50px;
+  padding-bottom: 170px; }
   #content-block .turtlebird {
     position: relative;
     background-image: url('/images/scenery.png');
@@ -5634,18 +5637,17 @@ body {
     position: absolute;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 25px;
-    width: 90%;
-    left: -6%;
+    font-size: 24px;
+    width: 100%;
+    left: -5%;
     margin-top: 15px; }
 
 .footer-block {
-  position: fixed;
-  background-color: #2B2D33;
+  position: relative;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  height: 300px;
-  bottom: 0;
+  height: 200px;
+  bottom: -5%;
   width: 100%;
   list-style-type: none;
   font-family: 'Lato', sans-serif;
@@ -5654,20 +5656,31 @@ body {
   .footer-block a {
     color: #00CCCC;
     margin: 10%; }
+  .footer-block .bottom-nav {
+    position: absolute;
+    bottom: 0%;
+    left: 30%; }
   .footer-block .left-nav {
     margin-top: 15%;
-    position: top;
-    border-left: 3px solid #00CCCC; }
+    border-left: 3px solid #00CCCC;
+    background-color: red; }
   .footer-block .middle-nav {
     margin-top: 15%;
-    border-left: 3px solid #00CCCC; }
+    border-left: 3px solid #00CCCC;
+    background-color: yellow; }
   .footer-block .right-nav {
     margin-top: 15%;
-    border-left: 3px solid #00CCCC; }
+    border-left: 3px solid #00CCCC;
+    background-color: pink; }
   .footer-block footer {
     width: 74%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4.5%;
     text-align: center;
-    background-color: #00CCCC; }
+    background-color: #00CCCC;
+    position: absolute;
+    bottom: -30%;
+    left: 13%; }
+    .footer-block footer h4 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 5px; }

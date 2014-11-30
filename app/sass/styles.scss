@@ -5,7 +5,7 @@ $darkblue: #2B2D33;
 $teal: #00CCCC;
 
 body {
-  background-color: #FFF;
+  background-color: $darkblue;
 }
 
 #header-block {
@@ -16,7 +16,7 @@ body {
     background-repeat: repeat-x;
     display: inline-block;
     width: 100%;
-    height: 150px;
+    height: 100px;
 
     a {
       color: $teal;
@@ -64,9 +64,12 @@ body {
 }
 
 #content-block {
+  background-color: $white;
   position: relative;
   top: 50px;
   text-align: left;
+  padding-top: 50px;
+  padding-bottom: 170px;
 
   .turtlebird {
     position: relative;
@@ -111,20 +114,20 @@ body {
     position: absolute;
     font-family: 'Lato', sans-serif;
     font-weight: 700;
-    font-size: 25px;
-    width: 90%;
-    left: -6%;
+    font-size: 24px;
+    width: 100%;
+    left: -5%;
     margin-top: 15px;
   }
 }
 
 .footer-block {
-  position: fixed;
-  background-color: $darkblue;
+  position: relative;
+  // background-color: $white;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  height: 300px;
-  bottom: 0;
+  height: 200px;
+  bottom: -5%;
   width: 100%;
   list-style-type: none;
   font-family: 'Lato', sans-serif;
@@ -136,28 +139,46 @@ body {
     color: $teal;
     margin: 10%;
   }
+  .bottom-nav {
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+  }
 
   .left-nav {
     margin-top: 15%;
     border-left: 3px solid $teal;
+    background-color: red;
   }
 
   .middle-nav {
     margin-top: 15%;
     border-left: 3px solid $teal;
+    background-color: yellow;
   }
 
   .right-nav {
     margin-top: 15%;
     border-left: 3px solid $teal;
+    background-color: pink;
   }
 
   footer {
     width: 74%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 4.5%;
+    // margin-left: auto;
+    // margin-right: auto;
+    // margin-top: 4.5%;
     text-align: center;
     background-color: $teal;
+    position: absolute;
+    bottom: -30%;
+    left: 13%;
+
+    h4 {
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 5px;
+    }
   }
 }
