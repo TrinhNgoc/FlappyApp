@@ -5557,4 +5557,28 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 body {
+  position: relative;
   background-color: #FFF; }
+
+header {
+  background-color: #2B2D33;
+  display: inline-block;
+  width: 100%; }
+  header a {
+    color: #00CCCC;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; }
+  header #bird {
+    background-image: url('/images/logo.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    color: white;
+    height: 80px;
+    width: 120px; }
+  header .top-nav ul {
+    position: absolute;
+    left: 65%;
+    top: 4%;
+    border-bottom: 5px solid #00CCCC; }
+  header .top-nav ul li {
+    display: inline; }

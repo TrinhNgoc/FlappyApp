@@ -1,6 +1,43 @@
 @import "partials/settings";
 @import "../public/bower_components/foundation/scss/foundation.scss";
 
+$darkblue: #2B2D33;
+$teal: #00CCCC;
+
 body {
+  position: relative;
   background-color: #FFF;
+}
+
+header {
+  background-color: $darkblue;
+  display: inline-block;
+  width: 100%;
+
+  a {
+    color: $teal;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+  }
+  
+  #bird {
+    background-image: url('/images/logo.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    color: white;
+    height: 80px;
+    width: 120px;
+  }
+
+  .top-nav ul {
+    position: absolute;
+    left: 65%;
+    top: 4%;
+    border-bottom: 5px solid $teal;
+  }
+
+  .top-nav ul li {
+    display: inline;
+
+  }
 }

@@ -5,14 +5,16 @@
   <title>Document</title>
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <link rel="stylesheet" href="css/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
   <div id="header-block">
     <header>
-      <h1 class="title">
+      <h1 class="title hide-for-small-only">
         <a href="#">FLAPPY APP</a>
       </h1><!-- .title -->
-      <nav class="top-nav">
+      <div id="bird"></div>
+      <nav class="top-nav hide-for-small-only">
         <ul>
           <li><a href="#">ABOUT</a></li>
           <li><a href="#">SPECS</a></li>
@@ -21,6 +23,29 @@
           <li><a href="#">SIGN UP</a></li>
         </ul>
       </nav><!-- .top-nav -->
+
+      <!-- NAV FOR SMALL ONLY -->
+
+      <nav class="top-bar show-for-small-only" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name">
+            <h1><a href="#">FLAPPY APP</a></h1>
+          </li>
+           <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
+
+        <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="right">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">SPECS</a></li>
+            <li><a href="#">PRICING</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">SIGN UP</a></li>
+          </ul>
+        </section>
+      </nav><!-- .top-bar -->
     </header>
   </div><!-- #header-block -->
 
