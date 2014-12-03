@@ -5566,6 +5566,9 @@ body {
   display: inline-block;
   width: 100%;
   height: 100px; }
+  @media only screen and (max-width: 40em) {
+    #header-block header {
+      height: 0; } }
   #header-block header a {
     color: #00CCCC;
     font-family: 'Lato', sans-serif;
@@ -5577,7 +5580,7 @@ body {
     margin-left: 13.5%;
     max-width: 600px;
     font-size: 50px; }
-  #header-block header #bird {
+  #header-block header .bird {
     background-image: url('/images/logo.png');
     background-repeat: no-repeat;
     background-size: 80%;
@@ -5587,6 +5590,11 @@ body {
     width: 120px;
     top: 4%;
     left: 29%; }
+    @media only screen and (max-width: 40em) {
+      #header-block header .bird {
+        top: 15%;
+        background-size: 50%;
+        left: 0%; } }
   #header-block header .top-nav ul {
     position: absolute;
     left: 56%;
@@ -5598,6 +5606,19 @@ body {
     letter-spacing: 2px; }
   #header-block header .top-nav ul li {
     display: inline; }
+#header-block .top-bar {
+  background-color: #2B2D33;
+  background-image: url('/images/border.png');
+  background-repeat: repeat-x;
+  position: relative;
+  width: 100%;
+  height: 50px; }
+  #header-block .top-bar h1 {
+    position: absolute;
+    left: 12%;
+    width: 40%; }
+    #header-block .top-bar h1 span {
+      color: #FFFFFF; }
 
 #content-block {
   background-color: #FFFFFF;
@@ -5606,6 +5627,10 @@ body {
   text-align: left;
   padding-top: 50px;
   padding-bottom: 170px; }
+  @media only screen and (max-width: 40em) {
+    #content-block {
+      padding: 0;
+      top: -15px; } }
   #content-block .turtlebird {
     position: relative;
     background-image: url('/images/scenery.png');
@@ -5615,6 +5640,9 @@ body {
     height: 270px;
     width: 730px;
     left: -10%; }
+    @media only screen and (max-width: 40em) {
+      #content-block .turtlebird {
+        left: -60%; } }
   #content-block .features {
     background-color: #00CCCC;
     position: absolute;
@@ -5624,10 +5652,13 @@ body {
     list-style-type: none;
     width: 130%; }
     #content-block .features li {
-      padding: 5px;
+      padding: 12px;
       margin-bottom: 7px;
       font-family: 'Lato', sans-serif;
-      font-weight: 700; }
+      font-weight: 900;
+      border-bottom: 1px solid #2B2D33;
+      letter-spacing: 2px;
+      font-size: 15px; }
       #content-block .features li span {
         color: #FFFFFF; }
     #content-block .features .black {
@@ -5641,43 +5672,49 @@ body {
     width: 100%;
     left: -5%;
     margin-top: 15px; }
+    @media only screen and (max-width: 40em) {
+      #content-block .description {
+        position: relative;
+        margin-top: 65%;
+        margin-bottom: -65%;
+        left: 0;
+        padding: 20px; } }
 
 .footer-block {
   position: relative;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  height: 200px;
   bottom: -5%;
-  width: 100%;
   list-style-type: none;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 15px; }
+  @media only screen and (max-width: 40em) {
+    .footer-block {
+      bottom: -28%; } }
   .footer-block a {
-    color: #00CCCC;
-    margin: 10%; }
+    color: #00CCCC; }
   .footer-block .bottom-nav {
-    position: absolute;
-    bottom: 0%;
-    left: 30%; }
+    bottom: 35%;
+    left: -4.5%;
+    width: 100%;
+    text-align: left;
+    padding: 40px; }
   .footer-block .left-nav {
-    margin-top: 15%;
-    border-left: 3px solid #00CCCC;
-    background-color: red; }
+    padding: 20px;
+    border-left: 3px solid #00CCCC; }
   .footer-block .middle-nav {
-    margin-top: 15%;
-    border-left: 3px solid #00CCCC;
-    background-color: yellow; }
+    padding: 20px;
+    border-left: 3px solid #00CCCC; }
   .footer-block .right-nav {
-    margin-top: 15%;
-    border-left: 3px solid #00CCCC;
-    background-color: pink; }
+    padding: 20px;
+    border-left: 3px solid #00CCCC; }
   .footer-block footer {
     width: 74%;
     text-align: center;
     background-color: #00CCCC;
     position: absolute;
-    bottom: -30%;
+    bottom: -14%;
     left: 13%; }
     .footer-block footer h4 {
       font-family: 'Lato', sans-serif;
