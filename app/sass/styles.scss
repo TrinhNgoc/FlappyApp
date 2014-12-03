@@ -6,9 +6,9 @@ $teal: #00CCCC;
 
 body {
   background-color: $darkblue;
-  // @media #{$small-only} { 
-  //   background-color: $white;
-  // }
+  @media #{$small-only} { 
+    background-color: $white;
+  }
 }
 
 #header-block {
@@ -49,7 +49,7 @@ body {
       height: 80px;
       width: 120px;
       top: 4%;
-      left: 29%;
+      left: 26%;
       @media #{$small-only} { 
         top: 15%;
         background-size: 50%;
@@ -78,13 +78,13 @@ body {
     background-repeat: repeat-x;
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 60px;
     // margin-top: 5px;
 
     h1 {
       position: absolute;
-      left: 12%;
-      width: 40%;
+      left: 17%;
+      width: 100%;
       span {
         color: $white;
       }
@@ -114,8 +114,11 @@ body {
     width: 730px;
     left: -10%;
     @media #{$small-only} { 
-      // position: absolute;
-      left: -60%;
+      // min-width: 484.5px;
+      max-width: 115%;
+      background-size: cover;
+      // left: -66%;
+      // max-width: 730px;
     }
   }
 
@@ -128,6 +131,12 @@ body {
     text-align: center;
     list-style-type: none;
     width: 130%;
+    @media #{$small-only} { 
+      width: 100%;
+      margin: auto;
+      left: 0;
+      position: relative;
+    } 
 
     li {
       padding: 12px;
@@ -159,10 +168,8 @@ body {
     margin-top: 15px;
     @media #{$small-only} { 
       position: relative;
-      margin-top: 65%;
-      margin-bottom: -65%;
       left: 0;
-      padding: 20px;
+      // padding: 20px;
     }
   }
 }
@@ -181,13 +188,15 @@ body {
   // border-left: 5px solid $teal;
   @media #{$small-only} { 
     bottom: -28%;
-    // height: 300px;
+    background-color: $darkblue;
+    height: 25%;
   }
   
   a {
     color: $teal;
     // margin: 10%;
   }
+
   .bottom-nav {
     // position: absolute;
     bottom: 35%;
@@ -195,12 +204,18 @@ body {
     width: 100%;
     text-align: left;
     padding: 40px;
+    @media #{$small-only} { 
+      padding: 15px;
+    }
   }
 
   .left-nav {
     padding: 20px;
     border-left: 3px solid $teal;
     // background-color: red;
+    @media #{$small-only} { 
+      border: none;
+    }
   }
 
   .middle-nav {
@@ -213,6 +228,9 @@ body {
     padding: 20px;
     border-left: 3px solid $teal;
     // background-color: pink;
+    @media #{$small-only} { 
+      border: none;
+    }
   }
 
   footer {
@@ -222,12 +240,24 @@ body {
     position: absolute;
     bottom: -14%;
     left: 13%;
+    @media #{$small-only} { 
+      background-color: $darkblue;
+      width: 100%;
+      left: 0;
+    }
+
 
     h4 {
       font-family: 'Lato', sans-serif;
       font-weight: 700;
       font-size: 15px;
       padding: 5px;
+      @media #{$small-only} { 
+        color: $white;
+        padding: 20px;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+      }
     }
   }
 }

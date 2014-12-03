@@ -5558,6 +5558,9 @@ th.hide-for-touch {
 
 body {
   background-color: #2B2D33; }
+  @media only screen and (max-width: 40em) {
+    body {
+      background-color: #FFFFFF; } }
 
 #header-block header {
   background-color: #2B2D33;
@@ -5589,7 +5592,7 @@ body {
     height: 80px;
     width: 120px;
     top: 4%;
-    left: 29%; }
+    left: 26%; }
     @media only screen and (max-width: 40em) {
       #header-block header .bird {
         top: 15%;
@@ -5612,11 +5615,11 @@ body {
   background-repeat: repeat-x;
   position: relative;
   width: 100%;
-  height: 50px; }
+  height: 60px; }
   #header-block .top-bar h1 {
     position: absolute;
-    left: 12%;
-    width: 40%; }
+    left: 17%;
+    width: 100%; }
     #header-block .top-bar h1 span {
       color: #FFFFFF; }
 
@@ -5642,7 +5645,8 @@ body {
     left: -10%; }
     @media only screen and (max-width: 40em) {
       #content-block .turtlebird {
-        left: -60%; } }
+        max-width: 115%;
+        background-size: cover; } }
   #content-block .features {
     background-color: #00CCCC;
     position: absolute;
@@ -5651,6 +5655,12 @@ body {
     text-align: center;
     list-style-type: none;
     width: 130%; }
+    @media only screen and (max-width: 40em) {
+      #content-block .features {
+        width: 100%;
+        margin: auto;
+        left: 0;
+        position: relative; } }
     #content-block .features li {
       padding: 12px;
       margin-bottom: 7px;
@@ -5675,10 +5685,7 @@ body {
     @media only screen and (max-width: 40em) {
       #content-block .description {
         position: relative;
-        margin-top: 65%;
-        margin-bottom: -65%;
-        left: 0;
-        padding: 20px; } }
+        left: 0; } }
 
 .footer-block {
   position: relative;
@@ -5691,7 +5698,9 @@ body {
   font-size: 15px; }
   @media only screen and (max-width: 40em) {
     .footer-block {
-      bottom: -28%; } }
+      bottom: -28%;
+      background-color: #2B2D33;
+      height: 25%; } }
   .footer-block a {
     color: #00CCCC; }
   .footer-block .bottom-nav {
@@ -5700,15 +5709,24 @@ body {
     width: 100%;
     text-align: left;
     padding: 40px; }
+    @media only screen and (max-width: 40em) {
+      .footer-block .bottom-nav {
+        padding: 15px; } }
   .footer-block .left-nav {
     padding: 20px;
     border-left: 3px solid #00CCCC; }
+    @media only screen and (max-width: 40em) {
+      .footer-block .left-nav {
+        border: none; } }
   .footer-block .middle-nav {
     padding: 20px;
     border-left: 3px solid #00CCCC; }
   .footer-block .right-nav {
     padding: 20px;
     border-left: 3px solid #00CCCC; }
+    @media only screen and (max-width: 40em) {
+      .footer-block .right-nav {
+        border: none; } }
   .footer-block footer {
     width: 74%;
     text-align: center;
@@ -5716,8 +5734,19 @@ body {
     position: absolute;
     bottom: -14%;
     left: 13%; }
+    @media only screen and (max-width: 40em) {
+      .footer-block footer {
+        background-color: #2B2D33;
+        width: 100%;
+        left: 0; } }
     .footer-block footer h4 {
       font-family: 'Lato', sans-serif;
       font-weight: 700;
       font-size: 15px;
       padding: 5px; }
+      @media only screen and (max-width: 40em) {
+        .footer-block footer h4 {
+          color: #FFFFFF;
+          padding: 20px;
+          word-spacing: 5px;
+          letter-spacing: 3px; } }
