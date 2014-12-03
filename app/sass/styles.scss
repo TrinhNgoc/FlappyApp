@@ -6,6 +6,9 @@ $teal: #00CCCC;
 
 body {
   background-color: $darkblue;
+  // @media #{$small-only} { 
+  //   background-color: $white;
+  // }
 }
 
 #header-block {
@@ -17,6 +20,9 @@ body {
     display: inline-block;
     width: 100%;
     height: 100px;
+    @media #{$small-only} { 
+      height: 0;
+    }
 
     a {
       color: $teal;
@@ -34,7 +40,7 @@ body {
       font-size: 50px;
     }
     
-    #bird {
+    .bird {
       background-image: url('/images/logo.png');
       background-repeat: no-repeat;
       background-size: 80%;
@@ -44,6 +50,11 @@ body {
       width: 120px;
       top: 4%;
       left: 29%;
+      @media #{$small-only} { 
+        top: 15%;
+        background-size: 50%;
+        left: 0%;
+      }
     }
 
     .top-nav ul {
@@ -61,6 +72,24 @@ body {
       display: inline;
     }
   }
+  .top-bar {
+    background-color: $darkblue;
+    background-image: url('/images/border.png');
+    background-repeat: repeat-x;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    // margin-top: 5px;
+
+    h1 {
+      position: absolute;
+      left: 12%;
+      width: 40%;
+      span {
+        color: $white;
+      }
+    }
+  }
 }
 
 #content-block {
@@ -70,6 +99,10 @@ body {
   text-align: left;
   padding-top: 50px;
   padding-bottom: 170px;
+  @media #{$small-only} { 
+    padding: 0;
+    top: -15px;
+  } 
 
   .turtlebird {
     position: relative;
@@ -80,6 +113,10 @@ body {
     height: 270px;
     width: 730px;
     left: -10%;
+    @media #{$small-only} { 
+      // position: absolute;
+      left: -60%;
+    }
   }
 
 
@@ -93,12 +130,14 @@ body {
     width: 130%;
 
     li {
-      padding: 5px;
+      padding: 12px;
       margin-bottom: 7px;
       // margin: 0px 20px 7px 20px;
       font-family: 'Lato', sans-serif;
-      font-weight: 700;
-      // border-bottom: 1px solid $darkblue;
+      font-weight: 900;
+      border-bottom: 1px solid $darkblue;
+      letter-spacing: 2px;
+      font-size: 15px;
       span {
         color: $white;
       }
@@ -118,60 +157,70 @@ body {
     width: 100%;
     left: -5%;
     margin-top: 15px;
+    @media #{$small-only} { 
+      position: relative;
+      margin-top: 65%;
+      margin-bottom: -65%;
+      left: 0;
+      padding: 20px;
+    }
   }
 }
 
 .footer-block {
   position: relative;
-  // background-color: $white;
   background-image: url('/images/border.png');
   background-repeat: repeat-x;
-  height: 200px;
+  // height: 300px;
   bottom: -5%;
-  width: 100%;
+  // width: 100%;
   list-style-type: none;
   font-family: 'Lato', sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 15px;
   // border-left: 5px solid $teal;
+  @media #{$small-only} { 
+    bottom: -28%;
+    // height: 300px;
+  }
   
   a {
     color: $teal;
-    margin: 10%;
+    // margin: 10%;
   }
   .bottom-nav {
-    position: absolute;
-    bottom: 0%;
-    left: 30%;
+    // position: absolute;
+    bottom: 35%;
+    left: -4.5%;
+    width: 100%;
+    text-align: left;
+    padding: 40px;
   }
 
   .left-nav {
-    margin-top: 15%;
+    padding: 20px;
     border-left: 3px solid $teal;
-    background-color: red;
+    // background-color: red;
   }
 
   .middle-nav {
-    margin-top: 15%;
+    padding: 20px;
     border-left: 3px solid $teal;
-    background-color: yellow;
+    // background-color: yellow;
   }
 
   .right-nav {
-    margin-top: 15%;
+    padding: 20px;
     border-left: 3px solid $teal;
-    background-color: pink;
+    // background-color: pink;
   }
 
   footer {
     width: 74%;
-    // margin-left: auto;
-    // margin-right: auto;
-    // margin-top: 4.5%;
     text-align: center;
     background-color: $teal;
     position: absolute;
-    bottom: -30%;
+    bottom: -14%;
     left: 13%;
 
     h4 {
