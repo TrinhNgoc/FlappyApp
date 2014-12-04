@@ -23,6 +23,9 @@ body {
     @media #{$small-only} { 
       height: 0;
     }
+    @media #{$medium-only} { 
+      height: 80px;
+    }
 
     a {
       color: $teal;
@@ -38,6 +41,17 @@ body {
       margin-left: 13.5%;
       max-width: 600px;
       font-size: 50px;
+      @media #{$medium-only} { 
+        font-size: 20px;
+        letter-spacing: 3px;
+        word-spacing: 0;
+        margin-left: 15%;
+        margin-top: 4%;
+        span {
+          color: $white;
+          display: block;
+        }
+      }
     }
     
     .bird {
@@ -55,6 +69,10 @@ body {
         background-size: 50%;
         left: 0%;
       }
+      @media #{$medium-only} { 
+        left: 5%;
+        background-size: 70%;
+      }
     }
 
     .top-nav ul {
@@ -66,6 +84,10 @@ body {
       word-spacing: 15px;
       font-size: 15px;
       letter-spacing: 2px;
+      @media #{$medium-only} { 
+        left: 40%;
+        border: none;
+      }
     }
 
     .top-nav ul li {
@@ -102,7 +124,10 @@ body {
   @media #{$small-only} { 
     padding: 0;
     top: -15px;
-  } 
+  }
+  @media #{$medium-only} { 
+    padding-top: 0;
+  }
 
   .turtlebird {
     position: relative;
@@ -115,10 +140,17 @@ body {
     left: -10%;
     @media #{$small-only} { 
       // min-width: 484.5px;
-      max-width: 115%;
+      width: 100%;
       background-size: cover;
-      // left: -66%;
+      left: 0;
       // max-width: 730px;
+      border: none;
+    }
+    @media #{$medium-only} { 
+      left: 0;
+      margin: auto;
+      background-size: cover;
+      border: none;
     }
   }
 
@@ -133,10 +165,14 @@ body {
     width: 130%;
     @media #{$small-only} { 
       width: 100%;
-      margin: auto;
-      left: 0;
+      // margin: auto;
+      left: -15px;
       position: relative;
-    } 
+    }
+    @media #{$medium-only} { 
+        width: 100%;
+        left: 0;
+    }
 
     li {
       padding: 12px;
@@ -171,6 +207,10 @@ body {
       left: 0;
       // padding: 20px;
     }
+    @media #{$medium-only} { 
+      position: relative;
+
+    }
   }
 }
 
@@ -180,7 +220,7 @@ body {
   background-repeat: repeat-x;
   // height: 300px;
   bottom: -5%;
-  // width: 100%;
+  width: 100%;
   list-style-type: none;
   font-family: 'Lato', sans-serif;
   font-weight: 900;
@@ -190,6 +230,7 @@ body {
     bottom: -28%;
     background-color: $darkblue;
     height: 25%;
+    position: absolute;
   }
   
   a {
